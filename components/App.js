@@ -18,8 +18,8 @@ App = React.createClass({
     this.getGif(searchingText, function(gif) {
       this.setState({
         loading: false,
-        gif: gif,
-        searchingText: searchingText,
+        gif,
+        searchingText,
       });
     }.bind(this));
   },
