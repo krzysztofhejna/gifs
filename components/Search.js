@@ -29,6 +29,8 @@ Search = React.createClass({
         maxWidth: '350px'
     };
 
+    console.log('laoa');
+
     return ( 
       <input
         type="text"
