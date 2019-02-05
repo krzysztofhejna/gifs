@@ -83,3 +83,5 @@ typings/
 *.png
 
 .editorconfig
+
+package-lock.json
