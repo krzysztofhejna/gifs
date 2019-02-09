@@ -1,7 +1,7 @@
-var prefix = "https://cors-anywhere.herokuapp.com/";
-var GIPHY_API_URL = 'https://api.giphy.com';
-var GIPHY_PUB_KEY = 'EXWUiPgclsIBQDCZxdoceNfovlyag8xm'
-var ourUrl = GIPHY_API_URL + '/v1/gifs/random?api_key=' + GIPHY_PUB_KEY + '&tag=';
+const prefix = "https://cors-anywhere.herokuapp.com/";
+const GIPHY_API_URL = 'https://api.giphy.com';
+const GIPHY_PUB_KEY = 'EXWUiPgclsIBQDCZxdoceNfovlyag8xm'
+const ourUrl = GIPHY_API_URL + '/v1/gifs/random?api_key=' + GIPHY_PUB_KEY + '&tag=';
 
 App = React.createClass({
   getInitialState() {
@@ -20,7 +20,7 @@ App = React.createClass({
       .then((resp) => {
         this.setState({
           loading: false,
-          gif:resp,
+          gif: resp,
           searchingText,
         })
       }
